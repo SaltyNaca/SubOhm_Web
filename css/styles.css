@@ -1,0 +1,26 @@
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url('fonts/poppins/Poppins-SemiBold.otf') format('opentype');
+    font-weight: semi-bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PoppinsSemiBold;
+
+}
+
+.header-container .header-top{
+
+    border: 3px solid black;
+    margin: 0;
+    display: block;
+    position: static;
+    z-index: auto;
+    font-family: PoppinsSemiBold;
+    text-align: center;
+    padding: 5px 0;
+
+}
