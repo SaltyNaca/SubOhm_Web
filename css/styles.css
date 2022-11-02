@@ -5,21 +5,63 @@
 }
 
 *{
-    margin: 0;
     box-sizing: border-box;
     font-family: PoppinsSemiBold;
 
 }
 
+body{
+    margin: 0;
+}
+
 .header-container .header-top{
 
     border: 3px solid black;
-    margin: 0;
     display: block;
     position: static;
     z-index: auto;
     font-family: PoppinsSemiBold;
     text-align: center;
     padding: 5px 0;
+    margin: 0;
 
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.logo-name-red{
+    color: tomato;
+
+}
+
+.container-margin{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container-panel-row{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-panel-row-one,
+.container-panel-row-two{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img{ 
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
