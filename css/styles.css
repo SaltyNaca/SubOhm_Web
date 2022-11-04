@@ -30,9 +30,12 @@ body{
 .logo-container{
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 20px auto;
 }
 
+.logo-name{
+    margin: 0 auto;
+}
 .logo-name-red{
     color: tomato;
 
@@ -41,8 +44,14 @@ body{
 .container-margin{
     margin: 0 auto;
     max-width: 1200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to right, white, rgb(207, 207, 207));
 }
-
+.container-panel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .container-panel-row{
     display: flex;
     justify-content: center;
@@ -65,3 +74,55 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+.nav-bar-principal{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+/* Populares Zona */
+
+.populares-container{
+    box-sizing: border-box;
+}
+
+.populares-block{
+    padding: 20px 0;
+    margin-bottom: 35px;
+}
+.populares-titulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.populares-card{
+    margin: 0 auto;
+    padding: 0 10px;
+    list-style: none none;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+.populares-card-margin{
+    margin-right: 20px;
+}
+
+.populares-card-image{
+    max-width: 210px;
+}
+.populares-card-contenido{
+    padding: 0 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+}
+
