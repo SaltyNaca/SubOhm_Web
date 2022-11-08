@@ -10,9 +10,29 @@
 
 }
 
+p,
+h3,
+h1,
+h6,
 body{
     margin: 0;
 }
+
+img{ 
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* Header */
+
 
 .header-container .header-top{
 
@@ -30,27 +50,64 @@ body{
 .logo-container{
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .logo-name{
     margin: 0 auto;
 }
 .logo-name-red{
-    color: tomato;
+    color: rgb(144, 40, 37);
 
 }
+
+
+/* Nav Bar */
+
+
+.nav-bar-container{
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.nav-bar-margin{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgb(144, 40, 37);
+}
+.nav-bar-principal{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.nav-bar-menu{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-menu:hover{
+    color: rgb(144, 40, 37);
+}
+
+
+/* Contenido Panel*/
+
 
 .container-margin{
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-image: linear-gradient(to right, white, rgb(207, 207, 207));
+    margin-bottom: 10px;
+    background-color: rgb(219, 219, 219);
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .container-panel{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-width: 1220px;
+    margin: 0 auto;
 }
 .container-panel-row{
     display: flex;
@@ -64,30 +121,18 @@ body{
     padding-right: 10px;
 }
 
-img{ 
-    max-width: 100%;
-    height: auto;
-}
-
-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-bar-principal{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    padding-inline-start: 0;
-    margin: auto;
-    padding-bottom: 10px;
-}
 
 /* Populares Zona */
 
+
 .populares-container{
-    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.populares-margin{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .populares-block{
@@ -102,11 +147,11 @@ a{
 
 .populares-card{
     margin: 0 auto;
-    padding: 0 10px;
     list-style: none none;
-    max-width: 1100px;
+    max-width: 1220px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-inline-start: 0%;
 }
 
 .populares-card-margin{
@@ -115,14 +160,104 @@ a{
 
 .populares-card-image{
     max-width: 210px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: box-shadow .3s;
 }
+
+.populares-card-image:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.populares-image{
+    border-radius: 5px;
+}
+
 .populares-card-contenido{
     padding: 0 5px;
-    margin-top: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+
+/* Footer */
+
+
+.footer-container{
+    justify-content: center;
+    padding: 0 10px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255,1) 7%, rgb(190, 190, 190) 69%, rgba(193, 193, 193,1) 100%);
+    
+}
+.footer-container-margin{
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.footer-container-contenido{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer-name-uncolor,
+.footer-name-color{
+    justify-content: center;
+    display: flex;
+}
+
+.siguenos{
+    flex: 1;
+}
+
+.siguenos-titulo{
     text-align: center;
 }
 
-h1{
-    margin: 0;
+.siguenos-icons-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.siguenos-icons{
+    
+}
+
+.contactenos{
+    flex: 1;
+}
+
+.contactenos-lugares-titulo{
+    text-align: center;
+}
+
+.contactenos-lugares{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.fa-brands, 
+.fa-instagram,
+.fa-2x{
+    color: rgb(0, 0, 0);
+}
+
+.footer-right{
+    display: flex;
+    border-top: 1px solid rgb(255, 255, 255);
+    padding-top: 5px;
+    margin-top: 15px;
+    justify-content: space-around;
 }
 
