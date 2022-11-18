@@ -1,28 +1,33 @@
 @font-face {
-    font-family: PoppinsSemiBold;
+    font-family: "PoppinsSemiBold";
     src: url('fonts/poppins/Poppins-SemiBold.otf') format('opentype');
     font-weight: semi-bold;
 }
 
 @font-face {
-    font-family: Cocogoose;
+    font-family: "Cocogoose";
     src: url('fonts/cocogoose/Cocogoose_trial.otf') format('opentype');
     font-style: normal;
 }
 
 @font-face {
-    font-family: AvertaSemiBold;
+    font-family: "AvertaSemiBold";
     src: url('fonts/averta/averta-semibold_bigfontsite.com.otf') format('opentype');
 }
 
 @font-face {
-    font-family: MontserratExtraLight;
+    font-family: "MontserratExtraLight";
     src: url('fonts/montserrat/Montserrat-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: MontserratRegular;
-    src: url("fonts/montserrat/Montserrat-Regular.ttf") format('truetype');
+    font-family: "MontserratRegular";
+    src: url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url('fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
 }
 
 *{
@@ -207,7 +212,7 @@ a{
 }
 .populares-titulo{
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -241,17 +246,21 @@ a{
 }
 
 .populares-card-contenido{
-    font-family: MontserratExtraLight;
-    font-weight: 500;
     padding: 0 5px;
     margin-top: 5px;
     text-align: center;
     font-size: 14px;
+    color: #323232;
+}
+.populares-nombre{
+    font-family: MontserratRegular;
+    font-weight: 500;
 }
 
 .populares-precio{
+    font-family: MontserratSemiBold;
+    font-weight: bold;
     padding-top: 10px;
-    font-weight: 600;
     padding-bottom: 10px;
 }
 
