@@ -188,6 +188,20 @@ a{
     color: rgb(144, 40, 37);
 }
 
+/* Sticky NavBar */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fbfbfb;
+    margin-top: 0;
+}
+  
+.sticky + .container-margin {
+    padding-top: 60px;
+}
 
 /* Contenido Panel*/
 
