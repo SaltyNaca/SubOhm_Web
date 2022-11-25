@@ -286,7 +286,7 @@ a{
 }
 .populares-titulo{
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -301,18 +301,23 @@ a{
     list-style: none none;
     max-width: 1220px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-inline-start: 0%;
+    flex-wrap: wrap;
 }
 
 .populares-card-margin{
-    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
 }
 
 .populares-card-image{
     max-width: 210px;
     background-color: #fbfbfb;
     border: 1px solid #efefef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .populares-image{
@@ -325,16 +330,20 @@ a{
     text-align: center;
     font-size: 14px;
     color: #323232;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 .populares-nombre{
     font-family: MontserratRegular;
-    font-weight: 500;
+    padding: 2px 0;
 }
 
 .populares-precio{
     font-family: MontserratSemiBold;
     font-weight: bold;
-    padding-top: 10px;
+    margin-top: auto;
+    padding-top: 5px;
     padding-bottom: 10px;
 }
 
