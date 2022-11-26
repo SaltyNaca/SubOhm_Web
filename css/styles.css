@@ -39,6 +39,7 @@ h3,
 h1,
 h2,
 h6,
+h4,
 body{
     margin: 0;
 }
@@ -53,6 +54,7 @@ a{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: #323232;
 }
 
 
@@ -220,6 +222,7 @@ a{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .container-panel-row-one,
@@ -229,6 +232,7 @@ a{
     overflow: hidden;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .image-one:hover,
@@ -334,6 +338,11 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+.populares-card-contenido a{
+    flex-direction: column;
+}
+
 .populares-nombre{
     font-family: MontserratRegular;
     padding: 2px 0;
@@ -526,3 +535,143 @@ a{
     padding-right: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+.detalle-container{
+    margin: 40px 0px;
+}
+
+.detalle-container-margin{
+    margin: auto;
+    max-width: 1200px;
+}
+
+.detalle-container-row{
+    display: flex;
+    padding: 0 10px;
+}
+
+.detalle-container-row img{
+    padding-right: 20px;
+}
+
+.detalle-contenido-container{
+    max-width: 700px;
+}
+
+.detalle-contenido-titulo p{
+    font-family: MontserratRegular;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.detalle-contenido-precio p{
+    font-family: MontserratSemiBold;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.detalle-contenido-descripcion{
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.detalle-contenido-descripcion h3{
+    font-family: MontserratRegular;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.detalle-contenido-descripcion p{
+    font-family: MontserratRegular;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.detalle-contenido-mg h4{
+    font-family: MontserratRegular;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.detalle-contenido-mg p{
+    font-family: MontserratRegular;
+    font-size: 18px;
+    border: 2px solid #323232;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 100vh;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajuste Pantalla Menor a  850PX */
+
+@media (max-width: 850px) {
+    .detalle-container-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .detalle-container-row img{
+        padding: 0;
+    }
+
+    .detalle-contenido-container{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .detalle-contenido-titulo p{
+        font-size: 4vw;
+        
+    }
+
+    .detalle-contenido-precio p{
+        font-size: 4vw;
+    }
+
+    .detalle-contenido-descripcion h3{
+        font-size: 4vw;
+    }
+    
+    .detalle-contenido-descripcion p{
+        font-size: 3vw;
+    }
+
+    .detalle-contenido-mg h4{
+        font-size: 4vw;
+    }
+
+    .detalle-contenido-mg p{
+        display: inline-block;
+        font-size: 3vw;
+        padding: 0.5vw 1vw;
+        border: 0.3vw solid #323232;
+    }
+}
