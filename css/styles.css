@@ -317,7 +317,6 @@ a{
 
 .populares-card-image{
     max-width: 210px;
-    background-color: #fbfbfb;
     border: 1px solid #efefef;
     height: 100%;
     display: flex;
@@ -615,6 +614,7 @@ a{
     border-radius: 100vh;
     display: inline-block;
     margin-right: 10px;
+    margin-top: 10px;
 }
 
 
